@@ -74,3 +74,94 @@ html,body{
     margin-left: 150px;
     cursor: pointer;
 }
+
+.footer{
+    width: 1440px;
+    height: 324px;
+    margin-top: 3242px;
+   padding: 50px 80px 20px;
+    
+  
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    gap: 30px;
+    
+    padding-bottom: 30px;
+}
+
+.column1{
+width: 276px;
+height: 157px;
+opacity: 1;
+}
+
+
+
+.column1 p{
+    font-weight: 400;
+    opacity: 0.5;
+    size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-top: 20px;
+}
+.column1 img{
+    margin-top: 20px;
+}
+
+.footer-col h4{
+font-size: 16px;
+margin-bottom: 15px;
+color: #000;
+}
+.footer-col{
+    margin-top: 25px;
+}
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color:#000;
+    font-weight: 700;
+}
+.footer-col ul{
+padding: 0;
+list-style: none;
+
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color:#555;
+    font-size: 16px;
+}
+.footer-col-app{
+    width: 124px;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 22px;
+    cursor: pointer;
+}
+.footer-col-app h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight:700;
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #EFF2F4;
+    height: 68px;
+    width: 100%;
+    padding: 18px 80px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+
