@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo-colored.png" alt="Brand" style="height: 48px;">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <select>
+                        <option>All category</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+                <div class="header-icons">
+                    <div class="header-icon">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </div>
+                    <div class="header-icon">
+                        <i class="fas fa-comment-alt"></i>
+                        Message
+                    </div>
+                    <a href="orders.html" class="header-icon">
+                        <i class="fas fa-heart"></i>
+                        Orders
+                    </a>
+                    <a href="cart.html" class="header-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        My cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-bars" style="margin-right: 10px;"></i> All category</a></li>
+                        <li><a href="shop.html">Hot offers</a></li>
+                        <li><a href="shop.html">Gift boxes</a></li>
+                        <li><a href="shop.html">Projects</a></li>
+                        <li><a href="shop.html">Menu item</a></li>
+                        <li><a href="#">Help <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="utility-nav">
+                    <span>English, USD <i class="fas fa-chevron-down"></i></span>
+                    <span>Ship to 🇩🇪 <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 style="margin: 20px 0; font-weight: 600;">My Cart (3)</h2>
+
+        <div class="cart-layout">
+            <div class="cart-list-container" id="cart-items-container">
+              
+                <div class="cart-item">
+                    <div class="cart-item-left">
+                        <div class="cart-img-box">
+                            <img src="assets/tech/3.jpg" alt="Item">
+                        </div>
+                        <div class="cart-details">
+                            <h4>T-shirts with multiple colors, for men and lady</h4>
+                            <div class="cart-meta">
+                                Size: medium, Color: blue, Material: Plastic
+                            </div>
+                            <div class="cart-meta">
+                                Seller: Artel Market
+                            </div>
+                            <div class="cart-actions">
+                                <button class="action-btn"
+                                    style="color: #ff4444; border-color: #ff4444;">Remove</button>
+                                <button class="action-btn"
+                                    style="color: var(--primary-color); border-color: var(--primary-color);">Save for
+                                    later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-right">
+                        <div class="cart-price">$78.99</div>
+                        <select class="qty-select">
+                            <option>Qty: 9</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-left">
+                        <div class="cart-img-box">
+                            <img src="assets/tech/3.jpg" alt="Item">
+                        </div>
+                        <div class="cart-details">
+                            <h4>T-shirts with multiple colors, for men and lady</h4>
+                            <div class="cart-meta">
+                                Size: medium, Color: blue, Material: Plastic
+                            </div>
+                            <div class="cart-meta">
+                                Seller: Artel Market
+                            </div>
+                            <div class="cart-actions">
+                                <button class="action-btn"
+                                    style="color: #ff4444; border-color: #ff4444;">Remove</button>
+                                <button class="action-btn"
+                                    style="color: var(--primary-color); border-color: var(--primary-color);">Save for
+                                    later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-right">
+                        <div class="cart-price">$78.99</div>
+                        <select class="qty-select">
+                            <option>Qty: 9</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-left">
+                        <div class="cart-img-box">
+                            <img src="assets/tech/3.jpg" alt="Item">
+                        </div>
+                        <div class="cart-details">
+                            <h4>T-shirts with multiple colors, for men and lady</h4>
+                            <div class="cart-meta">
+                                Size: medium, Color: blue, Material: Plastic
+                            </div>
+                            <div class="cart-meta">
+                                Seller: Artel Market
+                            </div>
+                            <div class="cart-actions">
+                                <button class="action-btn"
+                                    style="color: #ff4444; border-color: #ff4444;">Remove</button>
+                                <button class="action-btn"
+                                    style="color: var(--primary-color); border-color: var(--primary-color);">Save for
+                                    later</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-right">
+                        <div class="cart-price">$78.99</div>
+                        <select class="qty-select">
+                            <option>Qty: 9</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-cart">
+                <div class="coupon-card">
+                    <h4 style="color: var(--secondary-color); font-weight: 500;">Have a coupon?</h4>
+                    <div class="coupon-input-group">
+                        <input type="text" placeholder="Add coupon">
+                        <button>Apply</button>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$1403.97</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span style="color: #fa3434;">- $60.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span style="color: #00b517;">+ $14.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span style="font-size: 1.4rem;" id="cart-total">$1357.97</span>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-amex"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+   
+    <footer class="main-footer">
+        <div class="container">
+            <div class="brand-info">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo-colored.png" alt="Brand" style="height: 48px;">
+                    </a>
+                </div>
+                <p style="color: var(--secondary-color); font-size: 0.9rem; margin-top: 20px;">
+                    Best information about the company gies here but now lorem ipsum is
+                </p>
+            </div>
+
+            <div class="footer-bottom" style="margin-top: 20px;">
+                <div class="container">
+                    <div>&copy; 2023 Ecommerce.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

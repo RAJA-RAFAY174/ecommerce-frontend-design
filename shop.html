@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo-colored.png" alt="Brand" style="height: 48px;">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <select>
+                        <option>All category</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+                <div class="header-icons">
+                    <div class="header-icon">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </div>
+                    <div class="header-icon">
+                        <i class="fas fa-comment-alt"></i>
+                        Message
+                    </div>
+                    <a href="orders.html" class="header-icon">
+                        <i class="fas fa-heart"></i>
+                        Orders
+                    </a>
+                    <a href="cart.html" class="header-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        My cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-bars" style="margin-right: 10px;"></i> All category</a></li>
+                        <li><a href="shop.html">Hot offers</a></li>
+                        <li><a href="shop.html">Gift boxes</a></li>
+                        <li><a href="shop.html">Projects</a></li>
+                        <li><a href="shop.html">Menu item</a></li>
+                        <li><a href="#">Help <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="utility-nav">
+                    <span>English, USD <i class="fas fa-chevron-down"></i></span>
+                    <span>Ship to 🇩🇪 <i class="fas fa-chevron-down"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+      
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="shop.html">Clothings</a> <i class="fas fa-chevron-right"></i>
+            <a href="shop.html">Men's wear</a> <i class="fas fa-chevron-right"></i>
+            <span>Summer clothing</span>
+        </div>
+
+        <div class="shop-layout">
+            
+            <aside class="sidebar-filter">
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Category <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <ul class="filter-list">
+                        <li onclick="window.location.href='shop.html'">All Products</li>
+                        <li onclick="window.location.href='shop.html?category=tech'">Mobile accessory</li>
+                        <li onclick="window.location.href='shop.html?category=tech'">Electronics</li>
+                        <li onclick="window.location.href='shop.html?category=tech'">Smartphones</li>
+                        <li onclick="window.location.href='shop.html?category=tech'">Modern tech</li>
+                        <li onclick="window.location.href='shop.html?category=cloth'">Clothing</li>
+                        <li onclick="window.location.href='shop.html?category=interior'">Interior</li>
+                        <li style="color: var(--primary-color);">See all</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Brands <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <ul class="filter-list">
+                        <li><input type="checkbox"> Samsung</li>
+                        <li><input type="checkbox"> Apple</li>
+                        <li><input type="checkbox"> Huawei</li>
+                        <li><input type="checkbox"> Pocco</li>
+                        <li><input type="checkbox"> Lenovo</li>
+                        <li style="color: var(--primary-color);">See all</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Features <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <ul class="filter-list">
+                        <li><input type="checkbox"> Metallic</li>
+                        <li><input type="checkbox"> Plastic cover</li>
+                        <li><input type="checkbox"> 8GB Ram</li>
+                        <li><input type="checkbox"> Super power</li>
+                        <li><input type="checkbox"> Large Memory</li>
+                        <li style="color: var(--primary-color);">See all</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Price range <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                        <input type="number" placeholder="Min" class="sort-select" style="width: 100%;">
+                        <input type="number" placeholder="Max" class="sort-select" style="width: 100%;">
+                    </div>
+                    <button class="btn btn-light" style="width: 100%;">Apply</button>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Condition <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <ul class="filter-list">
+                        <li><input type="radio" name="condition"> Any</li>
+                        <li><input type="radio" name="condition"> Refurbished</li>
+                        <li><input type="radio" name="condition"> Brand new</li>
+                        <li><input type="radio" name="condition"> Old items</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        Ratings <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <ul class="filter-list">
+                        <li><input type="checkbox"> <i class="fas fa-star" style="color: #ff9017;"></i><i
+                                class="fas fa-star" style="color: #ff9017;"></i><i class="fas fa-star"
+                                style="color: #ff9017;"></i><i class="fas fa-star" style="color: #ff9017;"></i><i
+                                class="fas fa-star" style="color: #ff9017;"></i></li>
+                        <li><input type="checkbox"> <i class="fas fa-star" style="color: #ff9017;"></i><i
+                                class="fas fa-star" style="color: #ff9017;"></i><i class="fas fa-star"
+                                style="color: #ff9017;"></i><i class="fas fa-star" style="color: #ff9017;"></i> <i
+                                class="far fa-star" style="color: #ff9017;"></i></li>
+                        <li><input type="checkbox"> <i class="fas fa-star" style="color: #ff9017;"></i><i
+                                class="fas fa-star" style="color: #ff9017;"></i><i class="fas fa-star"
+                                style="color: #ff9017;"></i> <i class="far fa-star" style="color: #ff9017;"></i> <i
+                                class="far fa-star" style="color: #ff9017;"></i></li>
+                    </ul>
+                </div>
+            </aside>
+
+            
+            <div class="shop-content">
+                <div class="shop-content-head">
+                    <div class="results-count">12,911 items in <strong>Mobile accessory</strong></div>
+                    <div class="view-options">
+                        <div class="view-check">
+                            <input type="checkbox"> Verified only
+                        </div>
+                        <select class="sort-select">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                        <div class="view-btn-group">
+                            <button class="view-btn active"><i class="fas fa-th-large"></i></button>
+                            <button class="view-btn"><i class="fas fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tags-container">
+                    <div class="tag-btn">Category: Tech <i class="fas fa-times"></i></div>
+                    <div class="tag-btn">Min price: $50 <i class="fas fa-times"></i></div>
+                    <a href="#" style="color: var(--primary-color); font-size: 0.9rem; text-decoration: none;">Clear all
+                        filter</a>
+                </div>
+
+                <div class="shop-products-grid" id="shop-products-grid">
+                   
+                </div>
+
+                <div class="pagination">
+                    <div class="page-btn"><i class="fas fa-chevron-left"></i></div>
+                    <div class="page-btn active">1</div>
+                    <div class="page-btn">2</div>
+                    <div class="page-btn">3</div>
+                    <div class="page-btn"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="newsletter-section">
+                <h3>Subscribe on our newsletter</h3>
+                <p style="color: var(--light-text); margin-bottom: 20px;">Get daily news on upcoming offers from many
+                    suppliers all over the world</p>
+                <div style="display: inline-flex; gap: 10px;">
+                    <input type="email" placeholder="Email"
+                        style="padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius); width: 250px;">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="brand-info">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <a href="index.html">
+                            <img src="assets/logo-colored.png" alt="Brand" style="height: 48px;">
+                        </a>
+                    </div>
+                    <p style="color: var(--secondary-color); font-size: 0.9rem; margin-bottom: 20px;">
+                        Best information about the company gies here but now lorem ipsum is
+                    </p>
+                    <div style="display: flex; gap: 10px; color: var(--light-text); font-size: 1.2rem;">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>About</h5>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Partnership</h5>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Information</h5>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Money Refund</li>
+                        <li>Shipping</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>For users</h5>
+                    <ul>
+                        <li>Login</li>
+                        <li>Register</li>
+                        <li>Settings</li>
+                        <li>My Orders</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Get app</h5>
+                    <div class="app-btns">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                            alt="App Store">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div>&copy; 2023 Ecommerce.</div>
+                <div>English <i class="fas fa-chevron-up"></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
